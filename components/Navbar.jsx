@@ -29,6 +29,7 @@ const Navbar = () => {
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style={{ backgroundColor: "#fff", border: "none", outline: "none" }}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -41,7 +42,7 @@ const Navbar = () => {
                 >
                   <div className="d-flex align-items-center">
                     <TbPlayVolleyball
-                      color="black"
+                      color="#071952"
                       style={{ fontSize: "29px", marginRight: "10px" }}
                     />
                     Home
@@ -58,7 +59,7 @@ const Navbar = () => {
                 >
                   <div className="d-flex align-items-center">
                     <TbBallVolleyball
-                      color="black"
+                      color="#071952"
                       style={{ fontSize: "29px", marginRight: "10px" }}
                     />
                     Book
@@ -75,7 +76,7 @@ const Navbar = () => {
                 >
                   <div className="d-flex align-items-center">
                     <TbCricket
-                      color="black"
+                      color="#071952"
                       style={{ fontSize: "29px", marginRight: "10px" }}
                     />
                     UpcomingMatches
@@ -91,7 +92,7 @@ const Navbar = () => {
               onClick={() => navigate("/login-sign", { replace: true })}
             >
               <FaUserCircle
-                color="black"
+                color="#071952"
                 style={{ fontSize: "29px", marginRight: "10px" }}
               />
               Login / Signup

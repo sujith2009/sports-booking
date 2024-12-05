@@ -1,38 +1,35 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Fredoka:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"); */
-
 .navbarHeader {
-  background-color: #fbfbfb !important;
+  /* background-color: #fbfbfb !important; */
+  background-color: #eb8317 !important;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
-/* .hrTag {
-  margin: 0;
-  margin-top: 5px;
-  border-top: 3px solid black !important;
-} */
 .hrTag {
-  position: relative; /* For the pseudo-element */
+  position: relative;
   border: none;
-  height: 2px; /* Sets the height of the line */
-  background-color: transparent; /* Background of the main hr */
+  background-color: transparent;
   overflow: hidden;
   border-top: 3px solid #6d6a6a !important;
 }
 
 .hrTag:hover {
-  width: 100% !important; /* Width on hover */
-  border-top-color: #ff6347 !important; /* Change color on hover */
+  width: 100% !important;
+  border-top-color: #ff6347 !important;
 }
 
 .listItems {
   font-family: "Mulish", "sans-serif";
   font-optical-sizing: auto !important;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 19px;
+  color: #fff;
 }
 
 /*---Navbar-Header-Logo---*/
 @media screen and (max-width: 989px) {
+  .navbarHeader {
+    background-color: #eb8317 !important;
+  }
   .navbarBrand {
     margin-left: -43px;
   }
@@ -40,5 +37,12 @@
     text-align: center !important;
     width: 100% !important;
     padding-top: 22px !important;
+    color: #fff;
+  }
+  .hrTag {
+    color: red;
+    transform: none !important;
+    width: 100%;
+    height: 0 !important;
   }
 }
