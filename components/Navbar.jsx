@@ -5,6 +5,11 @@ import SportsLogo from "../src/assets/images/sports.png";
 import { TbPlayVolleyball, TbBallVolleyball, TbCricket } from "react-icons/tb";
 import { FaUserCircle } from "react-icons/fa";
 import LoginAndSignup from "../pages/LoginAndSignup";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { Offcanvas } from "bootstrap";
+
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -12,6 +17,7 @@ const Navbar = () => {
   const [loginModel, setLoginModel] = useState(false);
   const loginPopupModel = () => {
     setLoginModel(true);
+    closeOffcanvas();
   };
   return (
     <div>
@@ -114,6 +120,15 @@ const Navbar = () => {
       </nav> */}
       <nav className={`navbar navbar-expand-lg ${NavbarCss.navbarHeader}`}>
         <div className="container-fluid">
+          <Link className={`navbar-brand ${NavbarCss.navbarBrand}`} to="/">
+            <img
+              src={SportsLogo}
+              alt="logo"
+              className={`d-inline-block align-text-top ps-5 ${NavbarCss.headerLogo}`}
+              width={"100%"}
+              height={"80px"}
+            />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -128,19 +143,8 @@ const Navbar = () => {
             ></span>
           </button>
 
-          <Link className={`navbar-brand ${NavbarCss.navbarBrand}`} to="/">
-            <img
-              src={SportsLogo}
-              alt="logo"
-              className={`d-inline-block align-text-top ps-5 ${NavbarCss.headerLogo}`}
-              width={"100%"}
-              height={"80px"}
-            />
-          </Link>
-
           <div
-            className="offcanvas offcanvas-start"
-            tabIndex="-1"
+            className="offcanvas offcanvas-bottom h-75"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
@@ -150,7 +154,7 @@ const Navbar = () => {
               </h5>
               <button
                 type="button"
-                className="btn-close text-reset"
+                className="btn-close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
@@ -159,7 +163,10 @@ const Navbar = () => {
               <ul className="navbar-nav mx-auto align-items-center">
                 <NavLink to="/" className="nav-item px-3">
                   <li
-                    onClick={() => setMenu("Home")}
+                    onClick={() => {
+                      setMenu("Home");
+                      closeOffcanvas();
+                    }}
                     className={`nav-link py-0 ${NavbarCss.listItems}`}
                   >
                     <div className="d-flex align-items-center">

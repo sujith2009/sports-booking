@@ -68,21 +68,6 @@ const LoginAndSignup = () => {
                 >
                   {/*---Form--*/}
                   <form onSubmit={formSubmit}>
-                    <label for="exampleFormControlInput1" class="form-label">
-                      <span className="text">Enter Mobile No*</span>
-                    </label>
-                    <div class="input-group  mb-3">
-                      <span class="input-group-text fw-bold" id="basic-addon1">
-                        + 91
-                        <img src={India} alt="" className="img-fluid ps-2" />
-                      </span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        aria-label="Username"
-                        aria-describedby="basic-addon1"
-                      />
-                    </div>
                     <button
                       className="btn  w-100"
                       style={{
@@ -91,17 +76,10 @@ const LoginAndSignup = () => {
                         fontSize: "14px",
                         fontWeight: "600",
                       }}
-                    >
-                      Send OTP
-                    </button>
+                    ></button>
                   </form>
-                  <p
-                    className="text text-center mt-4"
-                    style={{ color: "gray" }}
-                  >
-                    or
-                  </p>
-                  <LoginGmailandGoogle />
+
+                  {/* <LoginGmailandGoogle /> */}
                 </div>
               </div>
             </div>

@@ -42,7 +42,7 @@
     text-align: center !important;
     width: 100% !important;
     padding-top: 22px !important;
-    color: #fff;
+    color: black !important;
   }
   .hrTag {
     color: red;
@@ -61,4 +61,14 @@
   .loginPopModelRowImage {
     width: 100% !important;
   }
+}
+
+@media screen and (max-width: 768px) {
+  /* .navbarBrand {
+    position: relative;
+    left: 40%;
+  }
+  .headerLogo {
+    width: 130px !important;
+  } */
 }
