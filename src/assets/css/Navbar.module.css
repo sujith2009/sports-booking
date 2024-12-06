@@ -7,9 +7,9 @@
 .hrTag {
   position: relative;
   border: none;
-  background-color: transparent;
+  /* background-color: transparent; */
   overflow: hidden;
-  border-top: 3px solid #6d6a6a !important;
+  border-top: 3px solid #424141 !important;
 }
 
 .hrTag:hover {
@@ -20,9 +20,13 @@
 .listItems {
   font-family: "Mulish", "sans-serif";
   font-optical-sizing: auto !important;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 19px;
-  color: #fff;
+  color: #fff !important;
+  transition: transform 1s, color 0.3s;
+}
+.listItems:hover {
+  transform: scale(1.1);
 }
 
 /*---Navbar-Header-Logo---*/
@@ -49,5 +53,12 @@
   .headerLogo {
     width: 140px;
     height: 79px;
+  }
+  /*-------*/
+  .loginPopImage {
+    display: none !important;
+  }
+  .loginPopModelRowImage {
+    width: 100% !important;
   }
 }
