@@ -1,9 +1,13 @@
 import React from "react";
+import Oursports from "../components/Oursports";
+import Gallery from "../components/Gallery";
+import Header from "./Header";
 
 const Home = () => {
   return (
     <div>
-      <h2>jerin sujith</h2>
+      {/*--Header--*/}
+      <Header />
     </div>
   );
 };
