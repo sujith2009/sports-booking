@@ -65,6 +65,7 @@ const Navbar = () => {
             className="offcanvas offcanvas-bottom  h-75"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
+            style={{ backgroundColor: "#f1f3f2" }}
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">

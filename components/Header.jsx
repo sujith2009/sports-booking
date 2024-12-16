@@ -29,15 +29,19 @@ const Header = () => {
               <h1 className={` fw-bold pb-3  ${NavbarCss.LocandVanues}`}>
                 Location & Venues
               </h1>
-              <h5 className={`pb-2 ${NavbarCss.headerAddres}`}>
-                Place: Cuddalore
-              </h5>
-              <h5 className={`pb-2 ${NavbarCss.headerAddres}`}>
+              <h5 className={` ${NavbarCss.headerAddres}`}>Place: Cuddalore</h5>
+              <h5 className={`${NavbarCss.headerAddres}`}>
                 Address: QQ38+MG4, Avenue Road,
               </h5>
-              <h5 className={`pb-2 ${NavbarCss.headerAddres}`}>
+              <h5 className={`${NavbarCss.headerAddres}`}>
                 Manjakuppam, Cuddalore, Tamil Nadu 607001
               </h5>
+              <h6 className={` fs-4 pt-3 ${NavbarCss.headerAddres}`}>
+                Seamlessly explore sports venues and play with
+              </h6>
+              <h6 className={` fs-4 ${NavbarCss.headerAddres}`}>
+                sports enthusiasts just like you!
+              </h6>
             </div>
           </div>
           <div className="col-md-6 d-flex justify-content-center align-items-center">

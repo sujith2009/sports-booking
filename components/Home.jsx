@@ -8,6 +8,7 @@ const Home = () => {
     <div>
       {/*--Header--*/}
       <Header />
+      <Oursports />
     </div>
   );
 };

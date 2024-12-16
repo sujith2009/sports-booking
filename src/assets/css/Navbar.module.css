@@ -1,8 +1,7 @@
 .navbarHeader {
   /* background-color: #fbfbfb !important; */
-  /* background-color: #eb8317 !important; */
-
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  background-color: #f1f3f2 !important;
+  /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); */
 }
 
 .hrTag {
@@ -31,7 +30,7 @@
 /*---Navbar-Header-Logo---*/
 @media screen and (max-width: 989px) {
   .navbarHeader {
-    background-color: #eb8317 !important;
+    background-color: #f1f3f2 !important;
     padding: 0px;
   }
   .navbarBrand {
@@ -71,13 +70,14 @@
   cursor: pointer;
 }
 .LocandVanues {
-  font-size: 50px;
-  color: #eb8317 !important;
+  font-size: 40px;
+  color: black !important;
+  font-weight: 900;
   font-family: "Mulish", "sans-serif";
 }
 .headerAddres {
   font-family: "Mulish", "sans-serif";
-  color: black !important;
+  color: gray !important;
 }
 
 @keyframes gradientAnimation {
