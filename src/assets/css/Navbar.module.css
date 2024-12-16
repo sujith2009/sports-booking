@@ -63,12 +63,87 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  /* .navbarBrand {
-    position: relative;
-    left: 40%;
+/*------------------Header Page CSS------------------------*/
+.HeaderImage {
+  width: 100% !important;
+  border-radius: 2%;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.LocandVanues {
+  font-size: 50px;
+  color: #eb8317 !important;
+  font-family: "Mulish", "sans-serif";
+}
+.headerAddres {
+  font-family: "Mulish", "sans-serif";
+  color: black !important;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-  .headerLogo {
-    width: 130px !important;
-  } */
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* .backgroundAnimation {
+  background: linear-gradient(270deg, #118b50, #074799, #7e1891);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+  padding: 20px; 
+  border-radius: 10px; 
+} */
+
+@media (max-width: 768px) {
+  .backgroundAnimation {
+    padding: 15px; /* Adjust for smaller screens */
+  }
+}
+
+.LocandVanues {
+  color: white; /* Ensure text is readable */
+}
+
+.headerAddres {
+  color: #f8f9fa; /* Ensure contrast for text */
+}
+
+/* Football Animation css */
+
+@keyframes moveFootball {
+  0% {
+    transform: translateY(0) translateX(-50%) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(50%) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.footballIcon {
+  position: absolute;
+  top: -50px; /* Start off-screen */
+  left: 50%; /* Center horizontally */
+  width: 50px; /* Adjust icon size */
+  height: 50px;
+  background-image: url("../images/football.png"); /* Replace with your icon path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: moveFootball 5s linear infinite; /* Adjust duration */
+}
+
+.footballIcon:nth-child(2) {
+  left: 30%; /* Vary starting position */
+  animation-duration: 6s;
+}
+
+.footballIcon:nth-child(3) {
+  left: 70%; /* Vary starting position */
+  animation-duration: 7s;
 }
