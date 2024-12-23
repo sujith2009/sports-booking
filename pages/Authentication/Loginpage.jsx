@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import SportsLogo from "../../src/assets/images/sports.png";
 import { Link, useNavigate } from "react-router-dom";
 import SignupCss from "../../src/assets/css/Signup.module.css";
 import axios from "axios";
 import { useAuth } from "../../context/Authcontext";
+//adminContext
+// import { AdminContext } from "../../context/AdminContext";
 const Loginpage = () => {
+  // const { login, adminerror } = useContext(AdminContext);
   const { setIsLoggedIn } = useAuth();
   const navigate = useNavigate();
   const [loginSubmit, setLoginSubmit] = useState({
@@ -17,7 +20,7 @@ const Loginpage = () => {
     const { name, value } = e.target;
     setLoginSubmit((prev) => ({ ...prev, [name]: value }));
   };
-  const loginformSubmit = (e) => {
+  const loginformSubmit = async (e) => {
     e.preventDefault();
     if (formValidation()) setSubmit(true);
   };
@@ -63,6 +66,10 @@ const Loginpage = () => {
     setError(errors);
     return Object.keys(errors).length === 0;
   };
+
+  /*--------------------ADMIN DASHBOARD FUNCTIONAILTY---------------------------------*/
+
+  /*--------------------ADMIN DASHBOARD FUNCTIONAILTY END---------------------------------*/
 
   return (
     <div>
@@ -125,6 +132,7 @@ const Loginpage = () => {
           {error.password && <p className="text-danger">{error.password}</p>}
         </div>
         {error.general && <p className="text-danger">{error.general}</p>}
+        {/* {adminerror && <p className="error-message">{adminerror}</p>} */}
         <button
           type="submit"
           className={`btn btn-dark text-white w-100 rounded ${SignupCss.labels} `}
