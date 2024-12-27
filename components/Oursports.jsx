@@ -38,7 +38,7 @@ const Oursports = () => {
                   alt={item.sportsName || "Sport"} // Use a meaningful alt text
                 />
                 <h4
-                  className={`text text-center mt-1 ${OurSportsCss.itemSportsName}`}
+                  className={`text text-center mt-1 mb-4 ${OurSportsCss.itemSportsName}`}
                 >
                   {item.sportsName}
                 </h4>

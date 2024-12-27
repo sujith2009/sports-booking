@@ -1,0 +1,82 @@
+.MyGallery {
+  font-family: "Mulish", "sans-serif";
+  font-weight: 800;
+}
+
+.cardCss {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* For styling the cards and adding shadows */
+.cardCss {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Default background color */
+}
+
+.carouselControlPrev,
+.carouselControlNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.carouselControlPrev {
+  left: -9%; /* Position the button 10px from the left */
+}
+
+/* Position the next button on the right */
+.carouselControlNext {
+  right: -9%; /* Position the button 10px from the right */
+}
+
+.carouselControlPrevIcon,
+.carouselControlNextIcon {
+  background-color: #202d33;
+  border-radius: 50%;
+  padding: 10px;
+}
+.cardTeamName {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Media Query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Ensure the carousel items are displayed as flex and can wrap */
+  .carouselItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Cards will take up 50% width per item on smaller screens (2 cards per slide) */
+  .carouselItems .cardCss {
+    flex: 0 0 58%; /* 2 cards per slide, each card takes up 48% width */
+    max-width: 48%;
+    /* Optional for debugging */
+  }
+
+  /* Ensure that the carousel items are aligned in one row without wrapping to the next row */
+  .carouselInner {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+/* For larger screens (min-width: 769px) */
+@media (min-width: 769px) {
+  /* Ensure the carousel items are displayed as flex and can wrap */
+  .carouselItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Cards will take up 25% width per item on larger screens (4 cards per slide) */
+  .carouselItems .cardCss {
+    flex: 0 0 20%; /* 4 cards per slide, each card takes up 23% width */
+    max-width: 20%;
+  }
+}

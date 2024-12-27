@@ -9,6 +9,7 @@ const Home = () => {
       {/*--Header--*/}
       <Header />
       <Oursports />
+      <Gallery />
     </div>
   );
 };

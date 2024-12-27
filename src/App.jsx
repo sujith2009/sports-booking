@@ -8,16 +8,16 @@ import Signup from "../pages/Signup";
 import Login from "../pages/Login";
 import { AuthProvider } from "../context/Authcontext";
 import Admin from "../pages/admin/Admin";
-import { useAuth } from "../context/Authcontext";
 
 function App() {
   const location = useLocation();
   const hideNavbarRoutesSignup = [
     "/signup",
     "/login",
-    "/admin-sports-dashoard",
+    "/admin/*",
+    "/admin/our-sports-types",
+    "/admin/out-winner-list",
   ];
-  //  const { isLoggedIn, isAdmin } = useAuth();
 
   return (
     <>
@@ -29,7 +29,10 @@ function App() {
           <Route path="/upcoming" element={<UpcomingMatches />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/admin-sports-dashoard" element={<Admin />} />
+
+          {/* Admin routes */}
+          <Route index path="/admin/*" element={<Admin />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AuthProvider>
