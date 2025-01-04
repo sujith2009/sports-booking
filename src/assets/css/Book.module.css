@@ -1,0 +1,69 @@
+.bookHeading {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.venuesImages {
+  width: 100%;
+  height: 240px;
+  cursor: pointer !important;
+  object-fit: cover;
+}
+
+.cardDetails {
+  transition: 0.5s;
+}
+.cardDetails:hover {
+  transform: scale(1.03);
+}
+.bookable {
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 7px 10px;
+  background-color: #5cb338;
+  cursor: pointer;
+}
+.busStandText {
+  color: gray;
+}
+.bookSportsName {
+  color: gray !important;
+}
+
+.cardBody {
+  background-color: #f5efff;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .venuesImages {
+    height: 200px;
+  }
+
+  .bookable {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+
+  .cardBody {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .venuesImages {
+    height: 200px;
+  }
+
+  .bookable {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+  .cardBody {
+    text-align: center;
+    padding: 8px;
+  }
+}

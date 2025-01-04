@@ -1,0 +1,45 @@
+.listSportsName {
+  color: #2f4858;
+  font-size: 28px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.listImage {
+  width: 100%;
+  height: 450px;
+  border-radius: 6px;
+}
+
+.BookingButton {
+  background-color: #57b664;
+  color: #fff;
+  font-weight: 700;
+}
+.BookingButton:hover {
+  background-color: #57b664;
+  color: #fff;
+}
+
+.cardTitle {
+  color: #474747;
+  font-size: 19px;
+  margin-bottom: 18px;
+}
+.timingCss {
+  color: #777373;
+}
+
+.embedResponsive {
+  width: 100%;
+  height: 350px;
+}
+@media screen and (max-width: 768px) {
+  .BookingButton {
+    max-width: 100%;
+    width: 100%;
+  }
+  .embedResponsive {
+    width: 100%;
+    height: 250px;
+  }
+}

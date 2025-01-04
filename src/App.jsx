@@ -8,6 +8,8 @@ import Signup from "../pages/Signup";
 import Login from "../pages/Login";
 import { AuthProvider } from "../context/Authcontext";
 import Admin from "../pages/admin/Admin";
+import Footer from "../components/Footer";
+import Bookinglist from "../components/BookingList/Bookinglist";
 
 function App() {
   const location = useLocation();
@@ -17,6 +19,7 @@ function App() {
     "/admin/*",
     "/admin/our-sports-types",
     "/admin/out-winner-list",
+    "/admin/booking-venues",
   ];
 
   return (
@@ -26,15 +29,17 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/booking-list/:id" element={<Bookinglist />} />
+
           <Route path="/upcoming" element={<UpcomingMatches />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
 
           {/* Admin routes */}
           <Route index path="/admin/*" element={<Admin />} />
-
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {!hideNavbarRoutesSignup.includes(location.pathname) && <Footer />}
       </AuthProvider>
     </>
   );

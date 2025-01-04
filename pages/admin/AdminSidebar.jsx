@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RxDashboard } from "react-icons/rx";
-import { MdOutlineSportsRugby } from "react-icons/md";
+import { MdOutlineSportsRugby, MdSportsBaseball } from "react-icons/md";
 import { GiPodiumWinner } from "react-icons/gi";
 import AdminCss from "../../src/assets/css/Admin.module.css";
 import { FaAlignLeft } from "react-icons/fa";
@@ -71,6 +71,16 @@ const AdminSidebar = ({ isMobile }) => {
             <div className="d-flex align-items-center">
               <GiPodiumWinner className="me-2 fs-4" />
               Our Sports Winner List
+            </div>
+          </Link>
+
+          <Link
+            to="/admin/booking-venues"
+            className={`list-group-item text-white  fw-bold ${AdminCss.listItems}`}
+          >
+            <div className="d-flex align-items-center">
+              <MdSportsBaseball className="me-2 fs-4" />
+              Booking Venues
             </div>
           </Link>
         </ul>
