@@ -10,6 +10,7 @@ import { AuthProvider } from "../context/Authcontext";
 import Admin from "../pages/admin/Admin";
 import Footer from "../components/Footer";
 import Bookinglist from "../components/BookingList/Bookinglist";
+import Booknow from "../components/BookingList/Booknow";
 
 function App() {
   const location = useLocation();
@@ -30,6 +31,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/booking-list/:id" element={<Bookinglist />} />
+          <Route path="/booking-list/book-now" element={<Booknow />} />
 
           <Route path="/upcoming" element={<UpcomingMatches />} />
           <Route path="/signup" element={<Signup />} />

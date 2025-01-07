@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import BookingCss from "../../src/assets/css/BookingList.module.css";
 import BookingListTwo from "./BookingListTwo";
 
 const Bookinglist = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const { state } = useLocation();
   const timing = "10:00 AM - 5:30 PM";
@@ -12,7 +13,9 @@ const Bookinglist = () => {
   if (!state) {
     return <p>Loading or No data available!</p>;
   }
-  const handleNextPage = () => {};
+  const handleNextPage = (id, item) => {
+    navigate(`/booking-list/book-now`, { state: { id, item } });
+  };
   return (
     <div>
       <div className="container mt-5 mb-2">
@@ -33,7 +36,7 @@ const Bookinglist = () => {
               <button
                 type="button"
                 className={`btn py-2 w-75 w-md-75 w-sm-100 ${BookingCss.BookingButton}`}
-                onClick={handleNextPage}
+                onClick={() => handleNextPage(state._id, state)}
               >
                 Book Now
               </button>

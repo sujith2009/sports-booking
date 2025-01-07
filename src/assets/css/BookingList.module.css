@@ -33,6 +33,12 @@
   width: 100%;
   height: 350px;
 }
+
+.aboutVenue {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  text-align: justify;
+}
 @media screen and (max-width: 768px) {
   .BookingButton {
     max-width: 100%;

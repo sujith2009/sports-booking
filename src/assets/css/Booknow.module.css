@@ -1,0 +1,23 @@
+.bookCard {
+  border-radius: 10px;
+}
+.BooknowHeader {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 0.5rem 0px;
+  font-size: 17px;
+  font-weight: 800;
+  border-radius: 10px;
+}
+
+.labels {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 17px;
+}
+
+.bookButton {
+  background-color: #f1f3f2;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: bold;
+}

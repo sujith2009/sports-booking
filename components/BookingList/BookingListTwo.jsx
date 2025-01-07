@@ -44,6 +44,13 @@ const BookingListTwo = () => {
             <h5 className={`card-title  ${BookingCss.cardTitle}`}>
               About Venue
             </h5>
+            <p className={`text ${BookingCss.aboutVenue}`}>
+              The Anna Stadium is a multi-purpose stadium at the Anna Sports
+              Complex located in the Indian city of Tiruchirappalli. It is
+              mainly used for Football,Cricket,Volleyball matches and athletic
+              events. It has a capacity of 10,000. It also has eight-lane 400
+              metres (1,300 ft) synthetic athletic track
+            </p>
           </div>
         </div>
       </div>
