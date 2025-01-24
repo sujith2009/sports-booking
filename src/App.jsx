@@ -21,6 +21,7 @@ function App() {
     "/admin/our-sports-types",
     "/admin/out-winner-list",
     "/admin/booking-venues",
+    "/admin/users-details",
   ];
 
   return (

@@ -4,7 +4,10 @@ import { useLocation } from "react-router-dom";
 import { FaCalendarAlt } from "react-icons/fa";
 import Booknowcss from "../../src/assets/css/Booknow.module.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
 const Booknow = () => {
+  const navigate = useNavigate();
   const { state } = useLocation();
   const { id, item } = state || {};
   const [error, setError] = useState(false);
@@ -40,6 +43,7 @@ const Booknow = () => {
           city: "",
           teamEmail: "",
         });
+        navigate("/");
         console.log("Response:", res.data);
       } catch (error) {
         if (error.response) {
