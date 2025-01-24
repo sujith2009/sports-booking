@@ -37,7 +37,7 @@ const Booking = () => {
           {/* Left Section: Heading */}
           <div className="col-md-8">
             <h4 className={`text pt-4 ${BookCss.bookHeading}`}>
-              Discover and Book Top Sports Complexes in Bangalore Online
+              Discover and Book Top Sports Complexes in Cuddalore Online
             </h4>
           </div>
           {/* Right Section: Search Input */}
