@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 import axios from "axios";
 
-// Create the AuthContext
+// Create the AuthContextss
 export const AdminContext = createContext();
 
 // AuthProvider component to wrap your app
